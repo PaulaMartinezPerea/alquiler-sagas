@@ -30,6 +30,7 @@ export async function POST(request: Request) {
     // Si todo ha ido bien, devolvemos un código 201 y un mensaje de éxito
     return NextResponse.json({ message: "Usuario creado con éxito", user: newUser.email }, { status: 201 });
   } catch (error) {
+    // Si va mal, mensaje de error
     return NextResponse.json({ error: "Error al crear usuario o el email ya existe" }, { status: 500 });
   }
 }
