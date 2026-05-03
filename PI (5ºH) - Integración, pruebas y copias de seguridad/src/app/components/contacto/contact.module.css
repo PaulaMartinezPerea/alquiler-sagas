@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.formSide {
+  flex: 1;
+}
+
+.infoSide {
+  flex: 1;
+  background-color: #2c3e50;
+  color: white;
+  padding: 2rem;
+}
+
+.label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.infoSection {
+  margin-top: 1.5rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.infoIconSmall {
+  margin-right: 0.5rem;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
